@@ -1,0 +1,20 @@
+Apple, $0.50, Food
+Banana, $0.30, Food
+Laptop, $899.99, Electronics
+Bluetooth Speaker, $49.99, Electronics
+Whole Wheat Bread, $2.50, Bread
+Chicken Sandwich, $5.00, Food
+Smartphone, $699.99, Electronics
+Orange Juice, $3.00, Food
+Multigrain Bread, $3.00, Bread
+Headphones, $29.99, Electronics
+Milk, $1.50, Food
+Cheese Pizza, $8.99, Food
+Tablet, $199.99, Electronics
+Rye Bread, $2.75, Bread
+Soda, $1.25, Food
+Digital Camera, $299.99, Electronics
+Peanut Butter, $4.00, Food
+Garlic Bread, $2.99, Bread
+Microwave, $79.99, Electronics
+Cereal, $3.50, Food

@@ -47,51 +47,55 @@
             this.consumerGroupBox = new System.Windows.Forms.GroupBox();
             this.groupBoxWillys = new System.Windows.Forms.GroupBox();
             this.lblItems3 = new System.Windows.Forms.Label();
-            this.lstWillys = new System.Windows.Forms.ListBox();
+            this.WillysTextBox = new System.Windows.Forms.ListBox();
             this.btnStopWillys = new System.Windows.Forms.Button();
             this.btnStartWillys = new System.Windows.Forms.Button();
-            this.chkWillysCont = new System.Windows.Forms.CheckBox();
+            this.WillysCheckbox = new System.Windows.Forms.CheckBox();
             this.label16 = new System.Windows.Forms.Label();
             this.lblWillysStatus = new System.Windows.Forms.Label();
-            this.groupBoxCoop = new System.Windows.Forms.GroupBox();
+            this.groupBoxCarrefour = new System.Windows.Forms.GroupBox();
             this.lblItems2 = new System.Windows.Forms.Label();
-            this.lstCoop = new System.Windows.Forms.ListBox();
-            this.btnStopCoop = new System.Windows.Forms.Button();
-            this.btnStartCoop = new System.Windows.Forms.Button();
-            this.chkCoopCont = new System.Windows.Forms.CheckBox();
+            this.CarrefourTextBox = new System.Windows.Forms.ListBox();
+            this.btnStopCarrefour = new System.Windows.Forms.Button();
+            this.btnStartCarrefour = new System.Windows.Forms.Button();
+            this.CarrefourCheckbox = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.lblCoopStatus = new System.Windows.Forms.Label();
+            this.lblCarrefourStatus = new System.Windows.Forms.Label();
             this.groupBoxIca = new System.Windows.Forms.GroupBox();
             this.lblItems1 = new System.Windows.Forms.Label();
-            this.lstIca = new System.Windows.Forms.ListBox();
+            this.IcaTextBox = new System.Windows.Forms.ListBox();
             this.btnStopIca = new System.Windows.Forms.Button();
             this.btnStartIca = new System.Windows.Forms.Button();
-            this.chkIcaCont = new System.Windows.Forms.CheckBox();
+            this.IcaCheckbox = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lblIcaStatus = new System.Windows.Forms.Label();
             this.groupBoxStorage = new System.Windows.Forms.GroupBox();
             this.lblItemsProduced = new System.Windows.Forms.Label();
             this.progressItems = new System.Windows.Forms.ProgressBar();
             this.lblMax = new System.Windows.Forms.Label();
+            this.startBtn = new System.Windows.Forms.Button();
             this.producerGroupBox.SuspendLayout();
             this.electronicsInc.SuspendLayout();
             this.grandBakery.SuspendLayout();
             this.freshProduce.SuspendLayout();
             this.consumerGroupBox.SuspendLayout();
             this.groupBoxWillys.SuspendLayout();
-            this.groupBoxCoop.SuspendLayout();
+            this.groupBoxCarrefour.SuspendLayout();
             this.groupBoxIca.SuspendLayout();
             this.groupBoxStorage.SuspendLayout();
             this.SuspendLayout();
+
             // 
             // producerGroupBox
             // 
             this.producerGroupBox.Controls.Add(this.electronicsInc);
             this.producerGroupBox.Controls.Add(this.grandBakery);
             this.producerGroupBox.Controls.Add(this.freshProduce);
-            this.producerGroupBox.Location = new System.Drawing.Point(13, 13);
+            this.producerGroupBox.Location = new System.Drawing.Point(17, 16);
+            this.producerGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.producerGroupBox.Name = "producerGroupBox";
-            this.producerGroupBox.Size = new System.Drawing.Size(229, 378);
+            this.producerGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.producerGroupBox.Size = new System.Drawing.Size(305, 465);
             this.producerGroupBox.TabIndex = 0;
             this.producerGroupBox.TabStop = false;
             this.producerGroupBox.Text = "Producers";
@@ -102,19 +106,23 @@
             this.electronicsInc.Controls.Add(this.btnStartElectronicsInc);
             this.electronicsInc.Controls.Add(this.lblStatusElectronicsInc);
             this.electronicsInc.Controls.Add(this.label7);
-            this.electronicsInc.Location = new System.Drawing.Point(6, 261);
+            this.electronicsInc.Location = new System.Drawing.Point(8, 321);
+            this.electronicsInc.Margin = new System.Windows.Forms.Padding(4);
             this.electronicsInc.Name = "electronicsInc";
-            this.electronicsInc.Size = new System.Drawing.Size(217, 100);
+            this.electronicsInc.Padding = new System.Windows.Forms.Padding(4);
+            this.electronicsInc.Size = new System.Drawing.Size(289, 123);
             this.electronicsInc.TabIndex = 2;
             this.electronicsInc.TabStop = false;
             this.electronicsInc.Text = "Electronics Inc.";
+            this.electronicsInc.Enter += new System.EventHandler(this.electronicsInc_Enter);
             // 
             // btnStopElectronicsInc
             // 
             this.btnStopElectronicsInc.Enabled = false;
-            this.btnStopElectronicsInc.Location = new System.Drawing.Point(149, 58);
+            this.btnStopElectronicsInc.Location = new System.Drawing.Point(199, 71);
+            this.btnStopElectronicsInc.Margin = new System.Windows.Forms.Padding(4);
             this.btnStopElectronicsInc.Name = "btnStopElectronicsInc";
-            this.btnStopElectronicsInc.Size = new System.Drawing.Size(48, 23);
+            this.btnStopElectronicsInc.Size = new System.Drawing.Size(64, 28);
             this.btnStopElectronicsInc.TabIndex = 3;
             this.btnStopElectronicsInc.Text = "Stop";
             this.btnStopElectronicsInc.UseVisualStyleBackColor = true;
@@ -122,9 +130,10 @@
             // 
             // btnStartElectronicsInc
             // 
-            this.btnStartElectronicsInc.Location = new System.Drawing.Point(29, 59);
+            this.btnStartElectronicsInc.Location = new System.Drawing.Point(39, 73);
+            this.btnStartElectronicsInc.Margin = new System.Windows.Forms.Padding(4);
             this.btnStartElectronicsInc.Name = "btnStartElectronicsInc";
-            this.btnStartElectronicsInc.Size = new System.Drawing.Size(99, 23);
+            this.btnStartElectronicsInc.Size = new System.Drawing.Size(132, 28);
             this.btnStartElectronicsInc.TabIndex = 2;
             this.btnStartElectronicsInc.Text = "Start Producing";
             this.btnStartElectronicsInc.UseVisualStyleBackColor = true;
@@ -133,18 +142,21 @@
             // lblStatusElectronicsInc
             // 
             this.lblStatusElectronicsInc.AutoSize = true;
-            this.lblStatusElectronicsInc.Location = new System.Drawing.Point(80, 31);
+            this.lblStatusElectronicsInc.Location = new System.Drawing.Point(107, 38);
+            this.lblStatusElectronicsInc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatusElectronicsInc.Name = "lblStatusElectronicsInc";
-            this.lblStatusElectronicsInc.Size = new System.Drawing.Size(98, 13);
+            this.lblStatusElectronicsInc.Size = new System.Drawing.Size(120, 16);
             this.lblStatusElectronicsInc.TabIndex = 1;
             this.lblStatusElectronicsInc.Text = "NOT PRODUCING";
+            this.lblStatusElectronicsInc.Click += new System.EventHandler(this.lblStatusElectronicsInc_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(43, 31);
+            this.label7.Location = new System.Drawing.Point(57, 38);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
+            this.label7.Size = new System.Drawing.Size(47, 16);
             this.label7.TabIndex = 0;
             this.label7.Text = "Status:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -155,9 +167,11 @@
             this.grandBakery.Controls.Add(this.btnStartGrandBakery);
             this.grandBakery.Controls.Add(this.lblStatusGrandBakery);
             this.grandBakery.Controls.Add(this.label5);
-            this.grandBakery.Location = new System.Drawing.Point(6, 139);
+            this.grandBakery.Location = new System.Drawing.Point(8, 171);
+            this.grandBakery.Margin = new System.Windows.Forms.Padding(4);
             this.grandBakery.Name = "grandBakery";
-            this.grandBakery.Size = new System.Drawing.Size(217, 100);
+            this.grandBakery.Padding = new System.Windows.Forms.Padding(4);
+            this.grandBakery.Size = new System.Drawing.Size(289, 123);
             this.grandBakery.TabIndex = 1;
             this.grandBakery.TabStop = false;
             this.grandBakery.Text = "Grand Bakery";
@@ -165,9 +179,10 @@
             // btnStopGrandBakery
             // 
             this.btnStopGrandBakery.Enabled = false;
-            this.btnStopGrandBakery.Location = new System.Drawing.Point(149, 58);
+            this.btnStopGrandBakery.Location = new System.Drawing.Point(199, 71);
+            this.btnStopGrandBakery.Margin = new System.Windows.Forms.Padding(4);
             this.btnStopGrandBakery.Name = "btnStopGrandBakery";
-            this.btnStopGrandBakery.Size = new System.Drawing.Size(48, 23);
+            this.btnStopGrandBakery.Size = new System.Drawing.Size(64, 28);
             this.btnStopGrandBakery.TabIndex = 3;
             this.btnStopGrandBakery.Text = "Stop";
             this.btnStopGrandBakery.UseVisualStyleBackColor = true;
@@ -175,9 +190,10 @@
             // 
             // btnStartGrandBakery
             // 
-            this.btnStartGrandBakery.Location = new System.Drawing.Point(29, 59);
+            this.btnStartGrandBakery.Location = new System.Drawing.Point(39, 73);
+            this.btnStartGrandBakery.Margin = new System.Windows.Forms.Padding(4);
             this.btnStartGrandBakery.Name = "btnStartGrandBakery";
-            this.btnStartGrandBakery.Size = new System.Drawing.Size(99, 23);
+            this.btnStartGrandBakery.Size = new System.Drawing.Size(132, 28);
             this.btnStartGrandBakery.TabIndex = 2;
             this.btnStartGrandBakery.Text = "Start Producing";
             this.btnStartGrandBakery.UseVisualStyleBackColor = true;
@@ -186,18 +202,20 @@
             // lblStatusGrandBakery
             // 
             this.lblStatusGrandBakery.AutoSize = true;
-            this.lblStatusGrandBakery.Location = new System.Drawing.Point(80, 31);
+            this.lblStatusGrandBakery.Location = new System.Drawing.Point(107, 38);
+            this.lblStatusGrandBakery.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatusGrandBakery.Name = "lblStatusGrandBakery";
-            this.lblStatusGrandBakery.Size = new System.Drawing.Size(98, 13);
+            this.lblStatusGrandBakery.Size = new System.Drawing.Size(120, 16);
             this.lblStatusGrandBakery.TabIndex = 1;
             this.lblStatusGrandBakery.Text = "NOT PRODUCING";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(43, 31);
+            this.label5.Location = new System.Drawing.Point(57, 38);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.Size = new System.Drawing.Size(47, 16);
             this.label5.TabIndex = 0;
             this.label5.Text = "Status:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -208,9 +226,11 @@
             this.freshProduce.Controls.Add(this.btnStartFreshProduce);
             this.freshProduce.Controls.Add(this.lblStatusScan);
             this.freshProduce.Controls.Add(this.label2);
-            this.freshProduce.Location = new System.Drawing.Point(6, 19);
+            this.freshProduce.Location = new System.Drawing.Point(8, 23);
+            this.freshProduce.Margin = new System.Windows.Forms.Padding(4);
             this.freshProduce.Name = "freshProduce";
-            this.freshProduce.Size = new System.Drawing.Size(217, 100);
+            this.freshProduce.Padding = new System.Windows.Forms.Padding(4);
+            this.freshProduce.Size = new System.Drawing.Size(289, 123);
             this.freshProduce.TabIndex = 0;
             this.freshProduce.TabStop = false;
             this.freshProduce.Text = "Fresh Produce";
@@ -218,9 +238,10 @@
             // btnStopFreshProduce
             // 
             this.btnStopFreshProduce.Enabled = false;
-            this.btnStopFreshProduce.Location = new System.Drawing.Point(149, 58);
+            this.btnStopFreshProduce.Location = new System.Drawing.Point(199, 71);
+            this.btnStopFreshProduce.Margin = new System.Windows.Forms.Padding(4);
             this.btnStopFreshProduce.Name = "btnStopFreshProduce";
-            this.btnStopFreshProduce.Size = new System.Drawing.Size(48, 23);
+            this.btnStopFreshProduce.Size = new System.Drawing.Size(64, 28);
             this.btnStopFreshProduce.TabIndex = 3;
             this.btnStopFreshProduce.Text = "Stop";
             this.btnStopFreshProduce.UseVisualStyleBackColor = true;
@@ -228,9 +249,10 @@
             // 
             // btnStartFreshProduce
             // 
-            this.btnStartFreshProduce.Location = new System.Drawing.Point(29, 59);
+            this.btnStartFreshProduce.Location = new System.Drawing.Point(39, 73);
+            this.btnStartFreshProduce.Margin = new System.Windows.Forms.Padding(4);
             this.btnStartFreshProduce.Name = "btnStartFreshProduce";
-            this.btnStartFreshProduce.Size = new System.Drawing.Size(99, 23);
+            this.btnStartFreshProduce.Size = new System.Drawing.Size(132, 28);
             this.btnStartFreshProduce.TabIndex = 2;
             this.btnStartFreshProduce.Text = "Start Producing";
             this.btnStartFreshProduce.UseVisualStyleBackColor = true;
@@ -239,18 +261,21 @@
             // lblStatusScan
             // 
             this.lblStatusScan.AutoSize = true;
-            this.lblStatusScan.Location = new System.Drawing.Point(80, 31);
+            this.lblStatusScan.Location = new System.Drawing.Point(107, 38);
+            this.lblStatusScan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatusScan.Name = "lblStatusScan";
-            this.lblStatusScan.Size = new System.Drawing.Size(98, 13);
+            this.lblStatusScan.Size = new System.Drawing.Size(120, 16);
             this.lblStatusScan.TabIndex = 1;
             this.lblStatusScan.Text = "NOT PRODUCING";
+            this.lblStatusScan.Click += new System.EventHandler(this.lblStatusScan_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 31);
+            this.label2.Location = new System.Drawing.Point(57, 38);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(47, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Status:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -258,11 +283,13 @@
             // consumerGroupBox
             // 
             this.consumerGroupBox.Controls.Add(this.groupBoxWillys);
-            this.consumerGroupBox.Controls.Add(this.groupBoxCoop);
+            this.consumerGroupBox.Controls.Add(this.groupBoxCarrefour);
             this.consumerGroupBox.Controls.Add(this.groupBoxIca);
-            this.consumerGroupBox.Location = new System.Drawing.Point(266, 13);
+            this.consumerGroupBox.Location = new System.Drawing.Point(355, 16);
+            this.consumerGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.consumerGroupBox.Name = "consumerGroupBox";
-            this.consumerGroupBox.Size = new System.Drawing.Size(410, 378);
+            this.consumerGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.consumerGroupBox.Size = new System.Drawing.Size(547, 465);
             this.consumerGroupBox.TabIndex = 1;
             this.consumerGroupBox.TabStop = false;
             this.consumerGroupBox.Text = "Consumers";
@@ -271,45 +298,49 @@
             // groupBoxWillys
             // 
             this.groupBoxWillys.Controls.Add(this.lblItems3);
-            this.groupBoxWillys.Controls.Add(this.lstWillys);
+            this.groupBoxWillys.Controls.Add(this.WillysTextBox);
             this.groupBoxWillys.Controls.Add(this.btnStopWillys);
             this.groupBoxWillys.Controls.Add(this.btnStartWillys);
-            this.groupBoxWillys.Controls.Add(this.chkWillysCont);
+            this.groupBoxWillys.Controls.Add(this.WillysCheckbox);
             this.groupBoxWillys.Controls.Add(this.label16);
             this.groupBoxWillys.Controls.Add(this.lblWillysStatus);
-            this.groupBoxWillys.Location = new System.Drawing.Point(19, 261);
+            this.groupBoxWillys.Location = new System.Drawing.Point(25, 321);
+            this.groupBoxWillys.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxWillys.Name = "groupBoxWillys";
-            this.groupBoxWillys.Size = new System.Drawing.Size(385, 100);
+            this.groupBoxWillys.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxWillys.Size = new System.Drawing.Size(513, 123);
             this.groupBoxWillys.TabIndex = 2;
             this.groupBoxWillys.TabStop = false;
             this.groupBoxWillys.Text = "Willys";
             this.groupBoxWillys.Enter += new System.EventHandler(this.groupBoxWillys_Enter);
             // 
-            // lblWillysItems
+            // lblItems3
             // 
             this.lblItems3.AutoSize = true;
-            this.lblItems3.Location = new System.Drawing.Point(121, 46);
-            this.lblItems3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblItems3.Name = "lblWillysItems";
-            this.lblItems3.Size = new System.Drawing.Size(31, 13);
+            this.lblItems3.Location = new System.Drawing.Point(161, 57);
+            this.lblItems3.Name = "lblItems3";
+            this.lblItems3.Size = new System.Drawing.Size(39, 16);
             this.lblItems3.TabIndex = 10;
             this.lblItems3.Text = "items";
             this.lblItems3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lstWillys
+            // WillysTextBox
             // 
-            this.lstWillys.FormattingEnabled = true;
-            this.lstWillys.Location = new System.Drawing.Point(156, 23);
-            this.lstWillys.Name = "lstWillys";
-            this.lstWillys.Size = new System.Drawing.Size(224, 69);
-            this.lstWillys.TabIndex = 8;
+            this.WillysTextBox.FormattingEnabled = true;
+            this.WillysTextBox.ItemHeight = 16;
+            this.WillysTextBox.Location = new System.Drawing.Point(208, 28);
+            this.WillysTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.WillysTextBox.Name = "WillysTextBox";
+            this.WillysTextBox.Size = new System.Drawing.Size(297, 84);
+            this.WillysTextBox.TabIndex = 8;
             // 
             // btnStopWillys
             // 
             this.btnStopWillys.Enabled = false;
-            this.btnStopWillys.Location = new System.Drawing.Point(111, 71);
+            this.btnStopWillys.Location = new System.Drawing.Point(148, 87);
+            this.btnStopWillys.Margin = new System.Windows.Forms.Padding(4);
             this.btnStopWillys.Name = "btnStopWillys";
-            this.btnStopWillys.Size = new System.Drawing.Size(40, 23);
+            this.btnStopWillys.Size = new System.Drawing.Size(53, 28);
             this.btnStopWillys.TabIndex = 7;
             this.btnStopWillys.Text = "Stop";
             this.btnStopWillys.UseVisualStyleBackColor = true;
@@ -317,30 +348,33 @@
             // 
             // btnStartWillys
             // 
-            this.btnStartWillys.Location = new System.Drawing.Point(7, 71);
+            this.btnStartWillys.Location = new System.Drawing.Point(9, 87);
+            this.btnStartWillys.Margin = new System.Windows.Forms.Padding(4);
             this.btnStartWillys.Name = "btnStartWillys";
-            this.btnStartWillys.Size = new System.Drawing.Size(81, 23);
+            this.btnStartWillys.Size = new System.Drawing.Size(108, 28);
             this.btnStartWillys.TabIndex = 6;
             this.btnStartWillys.Text = "Start Loading";
             this.btnStartWillys.UseVisualStyleBackColor = true;
             this.btnStartWillys.Click += new System.EventHandler(this.btnStartWillys_Click);
             // 
-            // chkWillysCont
+            // WillysCheckbox
             // 
-            this.chkWillysCont.AutoSize = true;
-            this.chkWillysCont.Location = new System.Drawing.Point(7, 46);
-            this.chkWillysCont.Name = "chkWillysCont";
-            this.chkWillysCont.Size = new System.Drawing.Size(91, 17);
-            this.chkWillysCont.TabIndex = 5;
-            this.chkWillysCont.Text = "Continue load";
-            this.chkWillysCont.UseVisualStyleBackColor = true;
+            this.WillysCheckbox.AutoSize = true;
+            this.WillysCheckbox.Location = new System.Drawing.Point(9, 57);
+            this.WillysCheckbox.Margin = new System.Windows.Forms.Padding(4);
+            this.WillysCheckbox.Name = "WillysCheckbox";
+            this.WillysCheckbox.Size = new System.Drawing.Size(111, 20);
+            this.WillysCheckbox.TabIndex = 5;
+            this.WillysCheckbox.Text = "Continue load";
+            this.WillysCheckbox.UseVisualStyleBackColor = true;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(-1, 23);
+            this.label16.Location = new System.Drawing.Point(-1, 28);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(40, 13);
+            this.label16.Size = new System.Drawing.Size(47, 16);
             this.label16.TabIndex = 4;
             this.label16.Text = "Status:";
             this.label16.Click += new System.EventHandler(this.label16_Click);
@@ -348,141 +382,156 @@
             // lblWillysStatus
             // 
             this.lblWillysStatus.AutoSize = true;
-            this.lblWillysStatus.Location = new System.Drawing.Point(36, 23);
+            this.lblWillysStatus.Location = new System.Drawing.Point(48, 28);
+            this.lblWillysStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWillysStatus.Name = "lblWillysStatus";
-            this.lblWillysStatus.Size = new System.Drawing.Size(99, 13);
+            this.lblWillysStatus.Size = new System.Drawing.Size(121, 16);
             this.lblWillysStatus.TabIndex = 3;
             this.lblWillysStatus.Text = "NOT CONSUMING";
             // 
-            // groupBoxCoop
+            // groupBoxCarrefour
             // 
-            this.groupBoxCoop.Controls.Add(this.lblItems2);
-            this.groupBoxCoop.Controls.Add(this.lstCoop);
-            this.groupBoxCoop.Controls.Add(this.btnStopCoop);
-            this.groupBoxCoop.Controls.Add(this.btnStartCoop);
-            this.groupBoxCoop.Controls.Add(this.chkCoopCont);
-            this.groupBoxCoop.Controls.Add(this.label8);
-            this.groupBoxCoop.Controls.Add(this.lblCoopStatus);
-            this.groupBoxCoop.Location = new System.Drawing.Point(19, 139);
-            this.groupBoxCoop.Name = "groupBoxCoop";
-            this.groupBoxCoop.Size = new System.Drawing.Size(385, 100);
-            this.groupBoxCoop.TabIndex = 1;
-            this.groupBoxCoop.TabStop = false;
-            this.groupBoxCoop.Text = "Coop Market";
-            this.groupBoxCoop.Enter += new System.EventHandler(this.groupBoxCoop_Enter);
+            this.groupBoxCarrefour.Controls.Add(this.lblItems2);
+            this.groupBoxCarrefour.Controls.Add(this.CarrefourTextBox);
+            this.groupBoxCarrefour.Controls.Add(this.btnStopCarrefour);
+            this.groupBoxCarrefour.Controls.Add(this.btnStartCarrefour);
+            this.groupBoxCarrefour.Controls.Add(this.CarrefourCheckbox);
+            this.groupBoxCarrefour.Controls.Add(this.label8);
+            this.groupBoxCarrefour.Controls.Add(this.lblCarrefourStatus);
+            this.groupBoxCarrefour.Location = new System.Drawing.Point(25, 171);
+            this.groupBoxCarrefour.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBoxCarrefour.Name = "groupBoxCarrefour";
+            this.groupBoxCarrefour.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxCarrefour.Size = new System.Drawing.Size(513, 123);
+            this.groupBoxCarrefour.TabIndex = 1;
+            this.groupBoxCarrefour.TabStop = false;
+            this.groupBoxCarrefour.Text = "Carrefour Market";
+            this.groupBoxCarrefour.Enter += new System.EventHandler(this.groupBoxCarrefour_Enter);
             // 
-            // lblCoopItems
+            // lblItems2
             // 
             this.lblItems2.AutoSize = true;
-            this.lblItems2.Location = new System.Drawing.Point(121, 46);
-            this.lblItems2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblItems2.Name = "lblCoopItems";
-            this.lblItems2.Size = new System.Drawing.Size(31, 13);
+            this.lblItems2.Location = new System.Drawing.Point(161, 57);
+            this.lblItems2.Name = "lblItems2";
+            this.lblItems2.Size = new System.Drawing.Size(39, 16);
             this.lblItems2.TabIndex = 10;
             this.lblItems2.Text = "items";
             this.lblItems2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lstCoop
+            // CarrefourTextBox
             // 
-            this.lstCoop.FormattingEnabled = true;
-            this.lstCoop.Location = new System.Drawing.Point(163, 23);
-            this.lstCoop.Name = "lstCoop";
-            this.lstCoop.Size = new System.Drawing.Size(215, 69);
-            this.lstCoop.TabIndex = 8;
+            this.CarrefourTextBox.FormattingEnabled = true;
+            this.CarrefourTextBox.ItemHeight = 16;
+            this.CarrefourTextBox.Location = new System.Drawing.Point(217, 28);
+            this.CarrefourTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CarrefourTextBox.Name = "CarrefourTextBox";
+            this.CarrefourTextBox.Size = new System.Drawing.Size(285, 84);
+            this.CarrefourTextBox.TabIndex = 8;
             // 
-            // btnStopCoop
+            // btnStopCarrefour
             // 
-            this.btnStopCoop.Enabled = false;
-            this.btnStopCoop.Location = new System.Drawing.Point(111, 62);
-            this.btnStopCoop.Name = "btnStopCoop";
-            this.btnStopCoop.Size = new System.Drawing.Size(40, 23);
-            this.btnStopCoop.TabIndex = 7;
-            this.btnStopCoop.Text = "Stop";
-            this.btnStopCoop.UseVisualStyleBackColor = true;
-            this.btnStopCoop.Click += new System.EventHandler(this.btnStopCoop_Click);
+            this.btnStopCarrefour.Enabled = false;
+            this.btnStopCarrefour.Location = new System.Drawing.Point(148, 76);
+            this.btnStopCarrefour.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStopCarrefour.Name = "btnStopCarrefour";
+            this.btnStopCarrefour.Size = new System.Drawing.Size(53, 28);
+            this.btnStopCarrefour.TabIndex = 7;
+            this.btnStopCarrefour.Text = "Stop";
+            this.btnStopCarrefour.UseVisualStyleBackColor = true;
+            this.btnStopCarrefour.Click += new System.EventHandler(this.btnStopCarrefour_Click);
             // 
-            // btnStartCoop
+            // btnStartCarrefour
             // 
-            this.btnStartCoop.Location = new System.Drawing.Point(15, 71);
-            this.btnStartCoop.Name = "btnStartCoop";
-            this.btnStartCoop.Size = new System.Drawing.Size(81, 23);
-            this.btnStartCoop.TabIndex = 6;
-            this.btnStartCoop.Text = "Start Loading";
-            this.btnStartCoop.UseVisualStyleBackColor = true;
-            this.btnStartCoop.Click += new System.EventHandler(this.btnStartCoop_Click);
+            this.btnStartCarrefour.Location = new System.Drawing.Point(20, 87);
+            this.btnStartCarrefour.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStartCarrefour.Name = "btnStartCarrefour";
+            this.btnStartCarrefour.Size = new System.Drawing.Size(108, 28);
+            this.btnStartCarrefour.TabIndex = 6;
+            this.btnStartCarrefour.Text = "Start Loading";
+            this.btnStartCarrefour.UseVisualStyleBackColor = true;
+            this.btnStartCarrefour.Click += new System.EventHandler(this.btnStartCarrefour_Click);
             // 
-            // chkCoopCont
+            // CarrefourCheckbox
             // 
-            this.chkCoopCont.AutoSize = true;
-            this.chkCoopCont.Location = new System.Drawing.Point(15, 46);
-            this.chkCoopCont.Name = "chkCoopCont";
-            this.chkCoopCont.Size = new System.Drawing.Size(91, 17);
-            this.chkCoopCont.TabIndex = 5;
-            this.chkCoopCont.Text = "Continue load";
-            this.chkCoopCont.UseVisualStyleBackColor = true;
+            this.CarrefourCheckbox.AutoSize = true;
+            this.CarrefourCheckbox.Location = new System.Drawing.Point(20, 57);
+            this.CarrefourCheckbox.Margin = new System.Windows.Forms.Padding(4);
+            this.CarrefourCheckbox.Name = "CarrefourCheckbox";
+            this.CarrefourCheckbox.Size = new System.Drawing.Size(111, 20);
+            this.CarrefourCheckbox.TabIndex = 5;
+            this.CarrefourCheckbox.Text = "Continue load";
+            this.CarrefourCheckbox.UseVisualStyleBackColor = true;
+            this.CarrefourCheckbox.CheckedChanged += new System.EventHandler(this.CarrefourCheckbox_CheckedChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 23);
+            this.label8.Location = new System.Drawing.Point(9, 28);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.Size = new System.Drawing.Size(47, 16);
             this.label8.TabIndex = 4;
             this.label8.Text = "Status:";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // lblCoopStatus
+            // lblCarrefourStatus
             // 
-            this.lblCoopStatus.AutoSize = true;
-            this.lblCoopStatus.Location = new System.Drawing.Point(43, 23);
-            this.lblCoopStatus.Name = "lblCoopStatus";
-            this.lblCoopStatus.Size = new System.Drawing.Size(99, 13);
-            this.lblCoopStatus.TabIndex = 3;
-            this.lblCoopStatus.Text = "NOT CONSUMING";
+            this.lblCarrefourStatus.AutoSize = true;
+            this.lblCarrefourStatus.Location = new System.Drawing.Point(57, 28);
+            this.lblCarrefourStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCarrefourStatus.Name = "lblCarrefourStatus";
+            this.lblCarrefourStatus.Size = new System.Drawing.Size(121, 16);
+            this.lblCarrefourStatus.TabIndex = 3;
+            this.lblCarrefourStatus.Text = "NOT CONSUMING";
+            this.lblCarrefourStatus.Click += new System.EventHandler(this.lblCarrefourStatus_Click);
             // 
             // groupBoxIca
             // 
             this.groupBoxIca.Controls.Add(this.lblItems1);
-            this.groupBoxIca.Controls.Add(this.lstIca);
+            this.groupBoxIca.Controls.Add(this.IcaTextBox);
             this.groupBoxIca.Controls.Add(this.btnStopIca);
             this.groupBoxIca.Controls.Add(this.btnStartIca);
-            this.groupBoxIca.Controls.Add(this.chkIcaCont);
+            this.groupBoxIca.Controls.Add(this.IcaCheckbox);
             this.groupBoxIca.Controls.Add(this.label6);
             this.groupBoxIca.Controls.Add(this.lblIcaStatus);
-            this.groupBoxIca.Location = new System.Drawing.Point(19, 19);
+            this.groupBoxIca.Location = new System.Drawing.Point(25, 23);
+            this.groupBoxIca.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxIca.Name = "groupBoxIca";
-            this.groupBoxIca.Size = new System.Drawing.Size(385, 100);
+            this.groupBoxIca.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxIca.Size = new System.Drawing.Size(513, 123);
             this.groupBoxIca.TabIndex = 0;
             this.groupBoxIca.TabStop = false;
             this.groupBoxIca.Text = "Ica";
             this.groupBoxIca.Enter += new System.EventHandler(this.groupBoxIca_Enter);
             // 
-            // lblIcaItems
+            // lblItems1
             // 
             this.lblItems1.AutoSize = true;
-            this.lblItems1.Location = new System.Drawing.Point(121, 38);
-            this.lblItems1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblItems1.Name = "lblIcaItems";
-            this.lblItems1.Size = new System.Drawing.Size(31, 13);
+            this.lblItems1.Location = new System.Drawing.Point(161, 47);
+            this.lblItems1.Name = "lblItems1";
+            this.lblItems1.Size = new System.Drawing.Size(39, 16);
             this.lblItems1.TabIndex = 9;
             this.lblItems1.Text = "items";
             this.lblItems1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lstIca
+            // IcaTextBox
             // 
-            this.lstIca.FormattingEnabled = true;
-            this.lstIca.Location = new System.Drawing.Point(163, 16);
-            this.lstIca.Name = "lstIca";
-            this.lstIca.Size = new System.Drawing.Size(215, 69);
-            this.lstIca.TabIndex = 8;
-            this.lstIca.SelectedIndexChanged += new System.EventHandler(this.lstIca_SelectedIndexChanged);
+            this.IcaTextBox.FormattingEnabled = true;
+            this.IcaTextBox.ItemHeight = 16;
+            this.IcaTextBox.Location = new System.Drawing.Point(217, 20);
+            this.IcaTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.IcaTextBox.Name = "IcaTextBox";
+            this.IcaTextBox.Size = new System.Drawing.Size(285, 84);
+            this.IcaTextBox.TabIndex = 8;
+            this.IcaTextBox.SelectedIndexChanged += new System.EventHandler(this.IcaTextBox_SelectedIndexChanged);
             // 
             // btnStopIca
             // 
             this.btnStopIca.Enabled = false;
-            this.btnStopIca.Location = new System.Drawing.Point(111, 64);
+            this.btnStopIca.Location = new System.Drawing.Point(148, 79);
+            this.btnStopIca.Margin = new System.Windows.Forms.Padding(4);
             this.btnStopIca.Name = "btnStopIca";
-            this.btnStopIca.Size = new System.Drawing.Size(40, 23);
+            this.btnStopIca.Size = new System.Drawing.Size(53, 28);
             this.btnStopIca.TabIndex = 7;
             this.btnStopIca.Text = "Stop";
             this.btnStopIca.UseVisualStyleBackColor = true;
@@ -490,30 +539,34 @@
             // 
             // btnStartIca
             // 
-            this.btnStartIca.Location = new System.Drawing.Point(15, 64);
+            this.btnStartIca.Location = new System.Drawing.Point(20, 79);
+            this.btnStartIca.Margin = new System.Windows.Forms.Padding(4);
             this.btnStartIca.Name = "btnStartIca";
-            this.btnStartIca.Size = new System.Drawing.Size(81, 23);
+            this.btnStartIca.Size = new System.Drawing.Size(108, 28);
             this.btnStartIca.TabIndex = 6;
             this.btnStartIca.Text = "Start Loading";
             this.btnStartIca.UseVisualStyleBackColor = true;
             this.btnStartIca.Click += new System.EventHandler(this.btnStartIca_Click);
             // 
-            // chkIcaCont
+            // IcaCheckbox
             // 
-            this.chkIcaCont.AutoSize = true;
-            this.chkIcaCont.Location = new System.Drawing.Point(15, 38);
-            this.chkIcaCont.Name = "chkIcaCont";
-            this.chkIcaCont.Size = new System.Drawing.Size(91, 17);
-            this.chkIcaCont.TabIndex = 5;
-            this.chkIcaCont.Text = "Continue load";
-            this.chkIcaCont.UseVisualStyleBackColor = true;
+            this.IcaCheckbox.AutoSize = true;
+            this.IcaCheckbox.Location = new System.Drawing.Point(20, 47);
+            this.IcaCheckbox.Margin = new System.Windows.Forms.Padding(4);
+            this.IcaCheckbox.Name = "IcaCheckbox";
+            this.IcaCheckbox.Size = new System.Drawing.Size(111, 20);
+            this.IcaCheckbox.TabIndex = 5;
+            this.IcaCheckbox.Text = "Continue load";
+            this.IcaCheckbox.UseVisualStyleBackColor = true;
+            this.IcaCheckbox.CheckedChanged += new System.EventHandler(this.IcaCheckbox_CheckedChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 16);
+            this.label6.Location = new System.Drawing.Point(9, 20);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
+            this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 4;
             this.label6.Text = "Status:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -521,20 +574,24 @@
             // lblIcaStatus
             // 
             this.lblIcaStatus.AutoSize = true;
-            this.lblIcaStatus.Location = new System.Drawing.Point(43, 16);
+            this.lblIcaStatus.Location = new System.Drawing.Point(57, 20);
+            this.lblIcaStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIcaStatus.Name = "lblIcaStatus";
-            this.lblIcaStatus.Size = new System.Drawing.Size(99, 13);
+            this.lblIcaStatus.Size = new System.Drawing.Size(121, 16);
             this.lblIcaStatus.TabIndex = 3;
             this.lblIcaStatus.Text = "NOT CONSUMING";
+            this.lblIcaStatus.Click += new System.EventHandler(this.lblIcaStatus_Click);
             // 
             // groupBoxStorage
             // 
             this.groupBoxStorage.Controls.Add(this.lblItemsProduced);
             this.groupBoxStorage.Controls.Add(this.progressItems);
             this.groupBoxStorage.Controls.Add(this.lblMax);
-            this.groupBoxStorage.Location = new System.Drawing.Point(13, 398);
+            this.groupBoxStorage.Location = new System.Drawing.Point(17, 490);
+            this.groupBoxStorage.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxStorage.Name = "groupBoxStorage";
-            this.groupBoxStorage.Size = new System.Drawing.Size(663, 82);
+            this.groupBoxStorage.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxStorage.Size = new System.Drawing.Size(884, 101);
             this.groupBoxStorage.TabIndex = 2;
             this.groupBoxStorage.TabStop = false;
             this.groupBoxStorage.Text = "Storage";
@@ -542,10 +599,9 @@
             // lblItemsProduced
             // 
             this.lblItemsProduced.AutoSize = true;
-            this.lblItemsProduced.Location = new System.Drawing.Point(595, 16);
-            this.lblItemsProduced.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblItemsProduced.Location = new System.Drawing.Point(793, 20);
             this.lblItemsProduced.Name = "lblItemsProduced";
-            this.lblItemsProduced.Size = new System.Drawing.Size(54, 13);
+            this.lblItemsProduced.Size = new System.Drawing.Size(67, 16);
             this.lblItemsProduced.TabIndex = 9;
             this.lblItemsProduced.Text = "Max items";
             this.lblItemsProduced.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -553,30 +609,46 @@
             // progressItems
             // 
             this.progressItems.ForeColor = System.Drawing.Color.Blue;
-            this.progressItems.Location = new System.Drawing.Point(155, 38);
+            this.progressItems.Location = new System.Drawing.Point(207, 47);
+            this.progressItems.Margin = new System.Windows.Forms.Padding(4);
             this.progressItems.Maximum = 20;
             this.progressItems.Name = "progressItems";
-            this.progressItems.Size = new System.Drawing.Size(490, 23);
+            this.progressItems.Size = new System.Drawing.Size(653, 28);
             this.progressItems.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressItems.TabIndex = 2;
+            this.progressItems.Click += new System.EventHandler(this.progressItems_Click);
             // 
             // lblMax
             // 
             this.lblMax.AutoSize = true;
-            this.lblMax.Location = new System.Drawing.Point(6, 42);
+            this.lblMax.Location = new System.Drawing.Point(8, 52);
+            this.lblMax.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMax.Name = "lblMax";
-            this.lblMax.Size = new System.Drawing.Size(106, 13);
+            this.lblMax.Size = new System.Drawing.Size(132, 16);
             this.lblMax.TabIndex = 1;
             this.lblMax.Text = "Max capacity (items):";
+            //
+            // startBtn
+            //
+            this.startBtn.Location = new System.Drawing.Point(12, 502);
+            this.startBtn.Name = "startBtn";
+            this.startBtn.Size = new System.Drawing.Size(117, 74);
+            this.startBtn.TabIndex = 3;
+            this.startBtn.Text = "Start";
+            this.startBtn.UseVisualStyleBackColor = true;
+            this.startBtn.Click += new System.EventHandler(this.StartBtn_Click);
+
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 487);
+            this.ClientSize = new System.Drawing.Size(919, 599);
+            this.Controls.Add(this.startBtn);
             this.Controls.Add(this.groupBoxStorage);
             this.Controls.Add(this.consumerGroupBox);
             this.Controls.Add(this.producerGroupBox);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Food Supply System";
@@ -590,8 +662,8 @@
             this.consumerGroupBox.ResumeLayout(false);
             this.groupBoxWillys.ResumeLayout(false);
             this.groupBoxWillys.PerformLayout();
-            this.groupBoxCoop.ResumeLayout(false);
-            this.groupBoxCoop.PerformLayout();
+            this.groupBoxCarrefour.ResumeLayout(false);
+            this.groupBoxCarrefour.PerformLayout();
             this.groupBoxIca.ResumeLayout(false);
             this.groupBoxIca.PerformLayout();
             this.groupBoxStorage.ResumeLayout(false);
@@ -625,29 +697,30 @@
         private System.Windows.Forms.Label lblStatusScan;
         private System.Windows.Forms.GroupBox groupBoxIca;
         private System.Windows.Forms.GroupBox groupBoxWillys;
-        private System.Windows.Forms.ListBox lstWillys;
+        public System.Windows.Forms.ListBox WillysTextBox;
         private System.Windows.Forms.Button btnStopWillys;
         private System.Windows.Forms.Button btnStartWillys;
-        private System.Windows.Forms.CheckBox chkWillysCont;
+        public System.Windows.Forms.CheckBox WillysCheckbox;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblWillysStatus;
-        private System.Windows.Forms.GroupBox groupBoxCoop;
-        private System.Windows.Forms.ListBox lstCoop;
-        private System.Windows.Forms.Button btnStopCoop;
-        private System.Windows.Forms.Button btnStartCoop;
-        private System.Windows.Forms.CheckBox chkCoopCont;
+        private System.Windows.Forms.GroupBox groupBoxCarrefour;
+        public System.Windows.Forms.ListBox CarrefourTextBox;
+        private System.Windows.Forms.Button btnStopCarrefour;
+        private System.Windows.Forms.Button btnStartCarrefour;
+        public System.Windows.Forms.CheckBox CarrefourCheckbox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblCoopStatus;
-        private System.Windows.Forms.ListBox lstIca;
+        private System.Windows.Forms.Label lblCarrefourStatus;
+        public System.Windows.Forms.ListBox IcaTextBox;
         private System.Windows.Forms.Button btnStopIca;
         private System.Windows.Forms.Button btnStartIca;
-        private System.Windows.Forms.CheckBox chkIcaCont;
+        public System.Windows.Forms.CheckBox IcaCheckbox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblIcaStatus;
         private System.Windows.Forms.Label lblItems1;
         private System.Windows.Forms.Label lblItems3;
         private System.Windows.Forms.Label lblItems2;
         private System.Windows.Forms.Label lblItemsProduced;
+        private System.Windows.Forms.Button startBtn;
     }
 }
 

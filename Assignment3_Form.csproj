@@ -50,6 +50,8 @@
     <Compile Include="Classes\Consumer.cs" />
     <Compile Include="Classes\Producer.cs" />
     <Compile Include="Classes\Product.cs" />
+    <Compile Include="Classes\Storage.cs" />
+    <Compile Include="Classes\StorageManager.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Products.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
